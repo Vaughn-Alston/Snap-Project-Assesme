@@ -23,21 +23,208 @@
  *
  */
 
-const FRESH_PRINCE_URL =
-  "https://upload.wikimedia.org/wikipedia/en/3/33/Fresh_Prince_S1_DVD.jpg";
-const CURB_POSTER_URL =
-  "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg";
-const EAST_LOS_HIGH_POSTER_URL =
-  "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg";
+  //Here I will create an array of objects of the cards, 
 
-// This is an array of strings (TV show titles)
-let titles = [
-  "Fresh Prince of Bel Air",
-  "Curb Your Enthusiasm",
-  "East Los High",
-];
-// Your final submission should have much more data than this, and
-// you should use more than just an array of strings to store it all.
+  let animallog = [
+
+  // Animal Card 1
+  {
+    title: "lion",
+    scientificName: "Panthera leo",
+    imageURL: "",
+    habitat: "savannah",
+    diet: "carnivore",
+    status: "Vulnerable",
+  },
+
+  // Animal Card 2
+  {
+    title: "tiger",
+    scientificName: "Panthera tigris",
+    imageURL: "",
+    habitat: "forest",
+    diet: "carnivore",
+    status: "Endangered",
+  },
+
+  // Animal Card 3
+  {
+    title: "african elephant",
+    scientificName: "Loxodonta africana",
+    imageURL: "",
+    habitat: "savannah",
+    diet: "herbivore",
+    status: "Endangered",
+  },
+
+  // Animal Card 4
+  {
+    title: "giraffe",
+    scientificName: "Giraffa camelopardalis",
+    imageURL: "",
+    habitat: "savannah",
+    diet: "herbivore",
+    status: "Vulnerable",
+  },
+
+  // Animal Card 5
+  {
+    title: "plains zebra",
+    scientificName: "Equus quagga",
+    imageURL: "",
+    habitat: "savannah",
+    diet: "herbivore",
+    status: "Near Threatened",
+  },
+
+  // Animal Card 6
+  {
+    title: "red panda",
+    scientificName: "Ailurus fulgens",
+    imageURL: "",
+    habitat: "forest",
+    diet: "omnivore",
+    status: "Endangered",
+  },
+
+  // Animal Card 7
+  {
+    title: "giant panda",
+    scientificName: "Ailuropoda melanoleuca",
+    imageURL: "",
+    habitat: "forest",
+    diet: "herbivore",
+    status: "Vulnerable",
+  },
+
+  // Animal Card 8
+  {
+    title: "snow leopard",
+    scientificName: "Panthera uncia",
+    imageURL: "",
+    habitat: "mountains",
+    diet: "carnivore",
+    status: "Vulnerable",
+  },
+
+  // Animal Card 9
+  {
+    title: "blue whale",
+    scientificName: "Balaenoptera musculus",
+    imageURL: "",
+    habitat: "ocean",
+    diet: "carnivore",
+    status: "Endangered",
+  },
+
+  // Animal Card 10
+  {
+    title: "hawksbill sea turtle",
+    scientificName: "Eretmochelys imbricata",
+    imageURL: "",
+    habitat: "ocean",
+    diet: "omnivore",
+    status: "Critically Endangered",
+  },
+
+  // Animal Card 11
+  {
+    title: "amur leopard",
+    scientificName: "Panthera pardus orientalis",
+    imageURL: "",
+    habitat: "forest",
+    diet: "carnivore",
+    status: "Critically Endangered",
+  },
+
+  // Animal Card 12
+  {
+    title: "vaquita",
+    scientificName: "Phocoena sinus",
+    imageURL: "",
+    habitat: "ocean",
+    diet: "carnivore",
+    status: "Critically Endangered",
+  },
+
+  // Animal Card 13
+  {
+    title: "black rhinoceros",
+    scientificName: "Diceros bicornis",
+    imageURL: "",
+    habitat: "savannah",
+    diet: "herbivore",
+    status: "Critically Endangered",
+  },
+
+  // Animal Card 14
+  {
+    title: "golden lion tamarin",
+    scientificName: "Leontopithecus rosalia",
+    imageURL: "",
+    habitat: "forest",
+    diet: "omnivore",
+    status: "Endangered",
+  },
+
+  // Animal Card 15
+  {
+    title: "california condor",
+    scientificName: "Gymnogyps californianus",
+    imageURL: "",
+    habitat: "mountains",
+    diet: "carnivore",
+    status: "Extinct in the Wild",
+  },
+
+  // Animal Card 16
+  {
+    title: "dodo",
+    scientificName: "Raphus cucullatus",
+    imageURL: "",
+    habitat: "island",
+    diet: "herbivore",
+    status: "Extinct",
+  },
+
+  // Animal Card 17
+  {
+    title: "cheetah",
+    scientificName: "Acinonyx jubatus",
+    imageURL: "",
+    habitat: "savannah",
+    diet: "carnivore",
+    status: "Vulnerable",
+  },
+
+  // Animal Card 18
+  {
+    title: "gray wolf",
+    scientificName: "Canis lupus",
+    imageURL: "",
+    habitat: "forest",
+    diet: "carnivore",
+    status: "Least Concern",
+  }
+
+  ]; 
+  //end of the array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // This function adds cards the page to display the data in the array
 function showCards() {
