@@ -25,7 +25,7 @@ body {
   margin: 20px;
 }
 
-.card {
+.expbox {
   width: 300px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -33,13 +33,13 @@ body {
   margin: 5px;
 }
 
-.card-content {
+.animal-container {
   padding: 20px;
   font-family: "Verdana";
   color: #777;
 }
 
-.card-content h2 {
+.animal-container h2 {
   margin-top: 0;
   font-size: 20px;
 }

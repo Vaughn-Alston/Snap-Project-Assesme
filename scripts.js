@@ -205,80 +205,116 @@
     habitat: "forest",
     diet: "carnivore",
     status: "Least Concern",
-  }
+  },
 
+  // Animal Card 19
+  {
+    title: "giant otter",
+    scientificName: "Pteronura brasiliensis",
+    imageURL: "",
+    habitat: "river",
+    diet: "carnivore",
+    status: "Endangered",
+
+  },
+
+  // Animal Card 20
+  {
+    title: "orangutan",
+    scientificName: "Pongo pygmaeus",
+    imageURL: "",
+    habitat: "forest",
+    diet: "omnivore",
+    status: "Critically Endangered",
+  }
   ]; 
   //end of the array
 
+//I will pass the array data
+function displayAnimals(data) {
 
+// This line of code will point to the containers I want to fill
+const boxes = document.querySelectorAll(".expbox");
 
+for( let i = 0; i < data.length; i++) {
 
+  // This will represent a individual card in the array, so I can access the properties of each card
+  let exp = data[i];
 
+if(boxes[i]) {
 
-
-
-
-
-
-
-
-
-
-
-
-// This function adds cards the page to display the data in the array
-function showCards() {
-  const cardContainer = document.getElementById("card-container");
-  cardContainer.innerHTML = "";
-  const templateCard = document.querySelector(".card");
-
-  for (let i = 0; i < titles.length; i++) {
-    let title = titles[i];
-
-    // This part of the code doesn't scale very well! After you add your
-    // own data, you'll need to do something totally different here.
-    let imageURL = "";
-    if (i == 0) {
-      imageURL = FRESH_PRINCE_URL;
-    } else if (i == 1) {
-      imageURL = CURB_POSTER_URL;
-    } else if (i == 2) {
-      imageURL = EAST_LOS_HIGH_POSTER_URL;
-    }
-
-    const nextCard = templateCard.cloneNode(true); // Copy the template card
-    editCardContent(nextCard, title, imageURL); // Edit title and image
-    cardContainer.appendChild(nextCard); // Add new card to the container
-  }
+  boxes[i].innerHTML = `
+  <h2>${exp.title}</h2>
+  <p><strong>Scientific Name:</strong> ${exp.scientificName}</p>
+  <p><strong>Habitat:</strong> ${exp.habitat}</p>
+  <p><strong>Diet:</strong> ${exp.diet}</p>
+  <p><strong>Conservation Status:</strong> ${exp.status}</p>
+  `;
 }
-
-function editCardContent(card, newTitle, newImageURL) {
-  card.style.display = "block";
-
-  const cardHeader = card.querySelector("h2");
-  cardHeader.textContent = newTitle;
-
-  const cardImage = card.querySelector("img");
-  cardImage.src = newImageURL;
-  cardImage.alt = newTitle + " Poster";
-
-  // You can use console.log to help you debug!
-  // View the output by right clicking on your website,
-  // select "Inspect", then click on the "Console" tab
-  console.log("new card:", newTitle, "- html: ", card);
 }
-
-// This calls the addCards() function when the page is first loaded
-document.addEventListener("DOMContentLoaded", showCards);
-
-function quoteAlert() {
-  console.log("Button Clicked!");
-  alert(
-    "I guess I can kiss heaven goodbye, because it got to be a sin to look this good!",
-  );
 }
+//This will display the cards on the page
+displayAnimals(animallog);
 
-function removeLastCard() {
-  titles.pop(); // Remove last item in titles array
-  showCards(); // Call showCards again to refresh
-}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
