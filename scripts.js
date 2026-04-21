@@ -26,208 +26,206 @@
   //Here I will create an array of objects of the cards, 
 
   let animallog = [
-
-  // Animal Card 1
   {
     title: "lion",
     scientificName: "Panthera leo",
-    imageURL: "ZooAnimals/lion-1_0.webp",
+    imageURL: "assets/images/lion-1_0.webp",
     habitat: "savannah",
     diet: "carnivore",
     status: "Vulnerable",
+    conservationLocation: "San Diego Zoo Safari Park"
   },
 
-  // Animal Card 2
   {
     title: "tiger",
     scientificName: "Panthera tigris",
-    imageURL: "",
+    imageURL: "assets/images/tigerww.webp",
     habitat: "forest",
     diet: "carnivore",
     status: "Endangered",
+    conservationLocation: "Smithsonian National Zoo"
   },
 
-  // Animal Card 3
   {
     title: "african elephant",
     scientificName: "Loxodonta africana",
-    imageURL: "",
+    imageURL: "assets/images/African-elephant-Kenya.webp",
     habitat: "savannah",
     diet: "herbivore",
     status: "Endangered",
+    conservationLocation: "San Diego Zoo Safari Park"
   },
 
-  // Animal Card 4
   {
     title: "giraffe",
     scientificName: "Giraffa camelopardalis",
-    imageURL: "",
+    imageURL: "assets/images/Girraf.webp",
     habitat: "savannah",
     diet: "herbivore",
     status: "Vulnerable",
+    conservationLocation: "Los Angeles Zoo"
   },
 
-  // Animal Card 5
   {
     title: "plains zebra",
     scientificName: "Equus quagga",
-    imageURL: "",
+    imageURL: "assets/images/zebra.webp",
     habitat: "savannah",
     diet: "herbivore",
     status: "Near Threatened",
+    conservationLocation: "San Diego Zoo"
   },
 
-  // Animal Card 6
   {
     title: "red panda",
     scientificName: "Ailurus fulgens",
-    imageURL: "",
+    imageURL: "assets/images/red_panda.webp",
     habitat: "forest",
     diet: "omnivore",
     status: "Endangered",
+    conservationLocation: "Los Angeles Zoo"
   },
 
-  // Animal Card 7
   {
     title: "giant panda",
     scientificName: "Ailuropoda melanoleuca",
-    imageURL: "",
+    imageURL: "assets/images/panda.webp",
     habitat: "forest",
     diet: "herbivore",
     status: "Vulnerable",
+    conservationLocation: "Smithsonian National Zoo"
   },
 
-  // Animal Card 8
   {
     title: "snow leopard",
     scientificName: "Panthera uncia",
-    imageURL: "",
+    imageURL: "assets/images/snow_leopard.webp",
     habitat: "mountains",
     diet: "carnivore",
     status: "Vulnerable",
+    conservationLocation: "Bronx Zoo"
   },
 
-  // Animal Card 9
   {
     title: "blue whale",
     scientificName: "Balaenoptera musculus",
-    imageURL: "",
+    imageURL: "assets/images/blue.webp",
     habitat: "ocean",
     diet: "carnivore",
     status: "Endangered",
+    conservationLocation: "Monterey Bay Aquarium"
   },
 
-  // Animal Card 10
   {
     title: "hawksbill sea turtle",
     scientificName: "Eretmochelys imbricata",
-    imageURL: "",
+    imageURL: "assets/images/hawksbill_sea_turtle.webp",
     habitat: "ocean",
     diet: "omnivore",
     status: "Critically Endangered",
+    conservationLocation: "Monterey Bay Aquarium"
   },
 
-  // Animal Card 11
   {
     title: "amur leopard",
     scientificName: "Panthera pardus orientalis",
-    imageURL: "",
+    imageURL: "assets/images/amur_leopard.webp",
     habitat: "forest",
     diet: "carnivore",
     status: "Critically Endangered",
+    conservationLocation: "San Diego Zoo"
   },
 
-  // Animal Card 12
   {
     title: "vaquita",
     scientificName: "Phocoena sinus",
-    imageURL: "",
+    imageURL: "assets/images/vaquita-swimming.webp",
     habitat: "ocean",
     diet: "carnivore",
     status: "Critically Endangered",
+    conservationLocation: "Conservation Program - Gulf of California"
   },
 
-  // Animal Card 13
   {
     title: "black rhinoceros",
     scientificName: "Diceros bicornis",
-    imageURL: "",
+    imageURL: "assets/images/Rhino_Black.webp",
     habitat: "savannah",
     diet: "herbivore",
     status: "Critically Endangered",
+    conservationLocation: "San Diego Zoo Safari Park"
   },
 
-  // Animal Card 14
   {
     title: "golden lion tamarin",
     scientificName: "Leontopithecus rosalia",
-    imageURL: "",
+    imageURL: "assets/images/golden_lion_tamarin.webp",
     habitat: "forest",
     diet: "omnivore",
     status: "Endangered",
+    conservationLocation: "National Zoo"
   },
 
-  // Animal Card 15
   {
     title: "california condor",
     scientificName: "Gymnogyps californianus",
-    imageURL: "",
+    imageURL: "assets/images/npsphoto-gavinemmons-caco-692-726-high-peaks.webp",
     habitat: "mountains",
     diet: "carnivore",
-    status: "Extinct in the Wild",
+    status: "Critically Endangered",
+    conservationLocation: "Los Angeles Zoo"
   },
 
-  // Animal Card 16
   {
     title: "dodo",
     scientificName: "Raphus cucullatus",
-    imageURL: "",
+    imageURL: "assets/images/dodo2ew.webp",
     habitat: "island",
     diet: "herbivore",
     status: "Extinct",
+    conservationLocation: "None"
   },
 
-  // Animal Card 17
   {
     title: "cheetah",
     scientificName: "Acinonyx jubatus",
-    imageURL: "",
+    imageURL: "assets/images/East-African-Cheetah.webp",
     habitat: "savannah",
     diet: "carnivore",
     status: "Vulnerable",
+    conservationLocation: "San Diego Zoo Safari Park"
   },
 
-  // Animal Card 18
   {
     title: "gray wolf",
     scientificName: "Canis lupus",
-    imageURL: "",
+    imageURL: "assets/images/Eurasian_wolf_2.webp",
     habitat: "forest",
     diet: "carnivore",
     status: "Least Concern",
+    conservationLocation: "Minnesota Zoo"
   },
 
-  // Animal Card 19
-  {
-    title: "giant otter",
-    scientificName: "Pteronura brasiliensis",
-    imageURL: "",
-    habitat: "river",
-    diet: "carnivore",
-    status: "Endangered",
-
-  },
-
-  // Animal Card 20
   {
     title: "orangutan",
     scientificName: "Pongo pygmaeus",
-    imageURL: "",
+    imageURL: "assets/images/orange_monkey.webp",
     habitat: "forest",
     diet: "omnivore",
     status: "Critically Endangered",
+    conservationLocation: "Los Angeles Zoo"
+  },
+
+  {
+    title: "mountain gorilla",
+    scientificName: "Gorilla beringei beringei",
+    imageURL: "assets/images/mountain_gorilla.webp",
+    habitat: "mountains",
+    diet: "herbivore",
+    status: "Endangered",
+    conservationLocation: "Virunga Conservation Region"
   }
-  ]; 
+]; 
   //end of the array
 
 //I will pass the array data
