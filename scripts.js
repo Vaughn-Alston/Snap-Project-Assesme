@@ -244,6 +244,7 @@ for( let i = 0; i < data.length; i++) {
 if(boxes[i]) {
 
   boxes[i].innerHTML = `
+  <img src="${exp.imageURL}" alt="${exp.title}" loading="lazy">
   <h2>${exp.title}</h2>
   <p><strong>Scientific Name:</strong> ${exp.scientificName}</p>
   <p><strong>Habitat:</strong> ${exp.habitat}</p>
