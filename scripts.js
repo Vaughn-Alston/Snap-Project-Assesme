@@ -29,62 +29,51 @@
 
     {
       title: "Beach Cleanup Volunteer",
-      organization: "Ocean Conservancy",
-      location: "Coastal Areas",
+      organization: "Heal the Bay",
+      location: "Santa Monica, CA",
       type: "Volunteer Opportunity",
       environment: "Ocean",
       effort: "Low",
-      impact: "Removes plastic waste that harms marine animals",
-      description: "Join local beach cleanups to remove trash and protect ocean wildlife.",
-      link: "https://oceanconservancy.org"
+      impact: "Removes plastic waste that harms marine life",
+      description: "Join community beach cleanups in Santa Monica to protect ocean wildlife from pollution.",
+      link: "https://healthebay.org"
     },
   
     {
-      title: "Wildlife Rescue Assistant",
-      organization: "Local Wildlife Rescue Centers",
-      location: "Local",
+      title: "Wetland Restoration Volunteer",
+      organization: "Bolsa Chica Conservancy",
+      location: "Huntington Beach, CA",
       type: "Volunteer Opportunity",
       environment: "Land",
       effort: "Medium",
-      impact: "Helps injured and displaced animals recover",
-      description: "Assist with feeding, cleaning, and caring for rescued animals.",
-      link: "https://www.humanesociety.org"
+      impact: "Restores coastal habitats for birds and marine species",
+      description: "Help restore wetlands by removing invasive plants and protecting native species.",
+      link: "https://bolsachica.org"
     },
   
     {
-      title: "Tree Planting Volunteer",
-      organization: "The Nature Conservancy",
-      location: "Various Locations",
+      title: "Wildlife Care Volunteer",
+      organization: "California Wildlife Center",
+      location: "Malibu, CA",
       type: "Volunteer Opportunity",
       environment: "Land",
       effort: "Medium",
-      impact: "Restores habitats for endangered species",
-      description: "Participate in tree planting events to rebuild natural ecosystems.",
-      link: "https://www.nature.org"
+      impact: "Supports rehabilitation of injured wildlife",
+      description: "Assist in caring for injured and orphaned animals during their recovery process.",
+      link: "https://cawildlife.org"
     },
   
     {
-      title: "Citizen Science Wildlife Tracking",
-      organization: "iNaturalist",
-      location: "Anywhere",
+      title: "Urban Tree Planting Volunteer",
+      organization: "TreePeople",
+      location: "Los Angeles, CA",
       type: "Volunteer Opportunity",
-      environment: "General",
+      environment: "Climate",
       effort: "Low",
-      impact: "Helps scientists track species and biodiversity",
-      description: "Record and upload wildlife observations to support conservation research.",
-      link: "https://www.inaturalist.org"
+      impact: "Improves air quality and supports urban ecosystems",
+      description: "Plant trees in local communities to help reduce heat and support biodiversity.",
+      link: "https://treepeople.org"
     }
-
-
-
-
-
-
-
-
-
-
-
 
   ]; // end of the array
 
