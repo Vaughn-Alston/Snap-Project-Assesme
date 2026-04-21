@@ -248,6 +248,7 @@ if(boxes[i]) {
   <p><strong>Habitat:</strong> ${exp.habitat}</p>
   <p><strong>Diet:</strong> ${exp.diet}</p>
   <p><strong>Conservation Status:</strong> ${exp.status}</p>
+  <p><strong>Conservation Location:</strong> ${exp.conservationLocation}</p>
   `;
 }
 }
