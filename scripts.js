@@ -25,6 +25,93 @@
 
   //Here I will create an array of objects of the cards, 
 
+  let experience = [
+
+    {
+      title: "Beach Cleanup Volunteer",
+      organization: "Ocean Conservancy",
+      location: "Coastal Areas",
+      type: "Volunteer Opportunity",
+      environment: "Ocean",
+      effort: "Low",
+      impact: "Removes plastic waste that harms marine animals",
+      description: "Join local beach cleanups to remove trash and protect ocean wildlife.",
+      link: "https://oceanconservancy.org"
+    },
+  
+    {
+      title: "Wildlife Rescue Assistant",
+      organization: "Local Wildlife Rescue Centers",
+      location: "Local",
+      type: "Volunteer Opportunity",
+      environment: "Land",
+      effort: "Medium",
+      impact: "Helps injured and displaced animals recover",
+      description: "Assist with feeding, cleaning, and caring for rescued animals.",
+      link: "https://www.humanesociety.org"
+    },
+  
+    {
+      title: "Tree Planting Volunteer",
+      organization: "The Nature Conservancy",
+      location: "Various Locations",
+      type: "Volunteer Opportunity",
+      environment: "Land",
+      effort: "Medium",
+      impact: "Restores habitats for endangered species",
+      description: "Participate in tree planting events to rebuild natural ecosystems.",
+      link: "https://www.nature.org"
+    },
+  
+    {
+      title: "Citizen Science Wildlife Tracking",
+      organization: "iNaturalist",
+      location: "Anywhere",
+      type: "Volunteer Opportunity",
+      environment: "General",
+      effort: "Low",
+      impact: "Helps scientists track species and biodiversity",
+      description: "Record and upload wildlife observations to support conservation research.",
+      link: "https://www.inaturalist.org"
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+  ]; // end of the array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //Here I will create an array of objects of the cards, 
+
   let animallog = [
   {
     title: "lion",
@@ -225,8 +312,7 @@
     status: "Endangered",
     conservationLocation: "Virunga Conservation Region"
   }
-]; 
-  //end of the array
+]; //end of the array
 
 //I will pass the array data
 function displayAnimals(data) {
@@ -253,6 +339,10 @@ if(boxes[i]) {
 }
 }
 }
+
+
+
+
 //This will display the cards on the page
 displayAnimals(animallog);
 
