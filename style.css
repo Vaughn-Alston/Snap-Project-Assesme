@@ -26,27 +26,36 @@ body {
 }
 
 .expbox {
-  width: 300px;
+  width: 280px;
+  min-height: 380px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  background-color: white;
 }
 
-.animal-container {
+ .animal-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
   padding: 20px;
   font-family: "Verdana";
   color: #777;
 }
+
 
 .animal-container h2 {
   margin-top: 0;
   font-size: 20px;
 }
 
-.card img {
+.expbox img {
   width: 100%;
-  height: auto;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .footer {

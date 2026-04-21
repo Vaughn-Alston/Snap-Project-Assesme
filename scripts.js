@@ -31,7 +31,7 @@
   {
     title: "lion",
     scientificName: "Panthera leo",
-    imageURL: "",
+    imageURL: "ZooAnimals/lion-1_0.webp",
     habitat: "savannah",
     diet: "carnivore",
     status: "Vulnerable",
