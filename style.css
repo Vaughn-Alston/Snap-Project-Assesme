@@ -123,12 +123,13 @@ nav a:hover {
   background-color: white;
 }
 
- .animal-container {
+.animal-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  justify-content: center;
+  gap: 20px;
   padding: 20px;
-  font-family: "Verdana";
+  font-family: "Verdana", sans-serif;
   color: #777;
 }
 
@@ -145,6 +146,66 @@ nav a:hover {
   border-radius: 8px;
   margin-bottom: 10px;
 }
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 60px;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 550px;
+}
+
+.hero-slider {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-slider img {
+  width: 100%;
+  max-width: 500px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
   display: flex;
