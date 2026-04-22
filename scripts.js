@@ -28,30 +28,50 @@
   let experience = [
     {
       title: "Beach Cleanup – Santa Monica",
+      organization: "Heal the Bay",
+      location: "Santa Monica, CA",
+      environment: "Ocean",
+      description: "Join a beach cleanup to remove harmful waste.",
       hours: "10-2",
       estimate: 25,
-      imageURL: "assets/images/santa_monica_cleanup.jpg",
+      imageURL: "images-vol/healbayy.webp",
+      orgImage: "images-vol/healthebay.webp",
       link: "https://healthebay.org"
     },
     {
       title: "Wetland Restoration – Bolsa Chica",
+      organization: "Bolsa Chica Conservancy",
+      location: "Huntington Beach, CA",
+      environment: "Wetlands",
+      description: "Help restore coastal habitats and protect wildlife.",
       hours: "9-1",
       estimate: 40,
       imageURL: "assets/images/bolsa_chica.jpg",
+      orgImage: "assets/images/bolsa_logo.png",
       link: "https://bolsachica.org"
     },
     {
       title: "Wildlife Care – Malibu",
+      organization: "California Wildlife Center",
+      location: "Malibu, CA",
+      environment: "Wildlife",
+      description: "Assist in caring for injured animals.",
       hours: "8-12",
       estimate: 30,
       imageURL: "assets/images/malibu_wildlife.jpg",
+      orgImage: "assets/images/cwc_logo.png",
       link: "https://cawildlife.org"
     },
     {
       title: "Tree Planting – Los Angeles",
+      organization: "TreePeople",
+      location: "Los Angeles, CA",
+      environment: "Urban",
+      description: "Plant trees to improve air quality.",
       hours: "10-1",
       estimate: 20,
       imageURL: "assets/images/la_tree_planting.jpg",
+      orgImage: "assets/images/treepeople_logo.png",
       link: "https://treepeople.org"
     }
   ];
@@ -74,35 +94,27 @@ function displayJobs(data) {
 
       // Fill each box with the experience data
       boxes[i].innerHTML = `
-        <img src="${exp.imageURL}" alt="${exp.title}" loading="lazy" class="experience-img">
+  <div class="text-content">
+  <div class="text-main">
+    <h2>${exp.title}</h2>
+    <p><strong>Organization:</strong> ${exp.organization}</p>
+    <p><strong>Location:</strong> ${exp.location}</p>
+    <p><strong>Environment:</strong> ${exp.environment}</p>
+    <p><strong>Hours:</strong> ${exp.hours}</p>
+    <p><strong>Estimate:</strong> ${exp.estimate}</p>
+    <p><strong>Description:</strong> ${exp.description}</p>
+  </div>
 
-        <!-- Title of the experience -->
-        <h2>${exp.title}</h2>
+  <div class="text-bottom">
+    <img src="${exp.orgImage}" alt="${exp.organization} logo" class="org-logo">
+    <a href="${exp.link}" target="_blank">${exp.organization} </a>
+  </div>
+</div>
 
-        <!-- Organization name -->
-        <p><strong>Organization:</strong> ${exp.organization}</p>
-
-        <!-- Location of the experience -->
-        <p><strong>Location:</strong> ${exp.location}</p>
-
-        <!-- Type of environment -->
-        <p><strong>Environment:</strong> ${exp.environment}</p>
-
-        <!-- Time range for the experience -->
-        <p><strong>Hours:</strong> ${exp.hours}</p>
-
-        <!-- Estimated number (kept as just a number) -->
-        <p><strong>Estimate:</strong> ${exp.estimate}</p>
-
-        <!-- Short description -->
-        <p><strong>Description:</strong> ${exp.description}</p>
-
-        <!-- Organization logo -->
-        <img src="${exp.orgImage}" alt="${exp.organization} logo" class="org-logo">
-
-        <!-- External link to learn more -->
-        <p><a href="${exp.link}" target="_blank">Learn More</a></p>
-      `;
+<div class="card-img">
+  <img src="${exp.imageURL}" alt="${exp.title}" loading="lazy">
+</div>
+`;
     }
   }
 }
