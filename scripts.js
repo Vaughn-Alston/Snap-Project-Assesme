@@ -23,63 +23,92 @@
  *
  */
 
-  //Here I will create an array of objects of the cards, 
+  //Here I will create an array of objects of the cards that hold experience
 
   let experience = [
-
     {
-      title: "Beach Cleanup Volunteer",
-      organization: "Heal the Bay",
-      location: "Santa Monica, CA",
-      type: "Volunteer Opportunity",
-      environment: "Ocean",
-      effort: "Low",
-      impact: "Removes plastic waste that harms marine life",
-      description: "Join community beach cleanups in Santa Monica to protect ocean wildlife from pollution.",
+      title: "Beach Cleanup – Santa Monica",
+      hours: "10-2",
+      estimate: 25,
+      imageURL: "assets/images/santa_monica_cleanup.jpg",
       link: "https://healthebay.org"
     },
-  
     {
-      title: "Wetland Restoration Volunteer",
-      organization: "Bolsa Chica Conservancy",
-      location: "Huntington Beach, CA",
-      type: "Volunteer Opportunity",
-      environment: "Land",
-      effort: "Medium",
-      impact: "Restores coastal habitats for birds and marine species",
-      description: "Help restore wetlands by removing invasive plants and protecting native species.",
+      title: "Wetland Restoration – Bolsa Chica",
+      hours: "9-1",
+      estimate: 40,
+      imageURL: "assets/images/bolsa_chica.jpg",
       link: "https://bolsachica.org"
     },
-  
     {
-      title: "Wildlife Care Volunteer",
-      organization: "California Wildlife Center",
-      location: "Malibu, CA",
-      type: "Volunteer Opportunity",
-      environment: "Land",
-      effort: "Medium",
-      impact: "Supports rehabilitation of injured wildlife",
-      description: "Assist in caring for injured and orphaned animals during their recovery process.",
+      title: "Wildlife Care – Malibu",
+      hours: "8-12",
+      estimate: 30,
+      imageURL: "assets/images/malibu_wildlife.jpg",
       link: "https://cawildlife.org"
     },
-  
     {
-      title: "Urban Tree Planting Volunteer",
-      organization: "TreePeople",
-      location: "Los Angeles, CA",
-      type: "Volunteer Opportunity",
-      environment: "Climate",
-      effort: "Low",
-      impact: "Improves air quality and supports urban ecosystems",
-      description: "Plant trees in local communities to help reduce heat and support biodiversity.",
+      title: "Tree Planting – Los Angeles",
+      hours: "10-1",
+      estimate: 20,
+      imageURL: "assets/images/la_tree_planting.jpg",
       link: "https://treepeople.org"
     }
+  ];
+// End of array
 
-  ]; // end of the array
+// This function will display experience for the support section
+function displayJobs(data) {
 
+  // This line selects all of the boxes I want to fill
+  const boxes = document.querySelectorAll(".joinus");
 
+  // Loop through my array dataset
+  for (let i = 0; i < data.length; i++) {
 
+    // This represents one experience object from the array
+    let exp = data[i];
 
+    // Make sure the box exists before inserting content
+    if (boxes[i]) {
+
+      // Fill each box with the experience data
+      boxes[i].innerHTML = `
+        <img src="${exp.imageURL}" alt="${exp.title}" loading="lazy" class="experience-img">
+
+        <!-- Title of the experience -->
+        <h2>${exp.title}</h2>
+
+        <!-- Organization name -->
+        <p><strong>Organization:</strong> ${exp.organization}</p>
+
+        <!-- Location of the experience -->
+        <p><strong>Location:</strong> ${exp.location}</p>
+
+        <!-- Type of environment -->
+        <p><strong>Environment:</strong> ${exp.environment}</p>
+
+        <!-- Time range for the experience -->
+        <p><strong>Hours:</strong> ${exp.hours}</p>
+
+        <!-- Estimated number (kept as just a number) -->
+        <p><strong>Estimate:</strong> ${exp.estimate}</p>
+
+        <!-- Short description -->
+        <p><strong>Description:</strong> ${exp.description}</p>
+
+        <!-- Organization logo -->
+        <img src="${exp.orgImage}" alt="${exp.organization} logo" class="org-logo">
+
+        <!-- External link to learn more -->
+        <p><a href="${exp.link}" target="_blank">Learn More</a></p>
+      `;
+    }
+  }
+}
+
+// Load each box with data
+displayJobs(experience);
 
 
 
