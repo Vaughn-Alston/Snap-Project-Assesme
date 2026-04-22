@@ -405,8 +405,53 @@ displayAnimals(animallog);
 
  
 
+function loadAnimalSlider(data) {
+  const slider = document.getElementById("animal-slider");
+  const animals = data.slice(0, 4);
 
+  slider.innerHTML = "";
 
+  animals.forEach((animal, index) => {
+    const card = document.createElement("div");
+    card.className = "option";
+    if (index === 0) card.classList.add("active");
+
+    card.style.setProperty("--optionImage", `url('${animal.imageURL}')`);
+
+    card.innerHTML = `
+      <div class="label">
+        <div class="info">
+          <div class="main">${animal.title}</div>
+          <div class="sub">${animal.description || ""}</div>
+        </div>
+      </div>
+    `;
+
+    slider.appendChild(card);
+  });
+
+  const options = document.querySelectorAll(".option");
+  let current = 0;
+
+  function setActive(i) {
+    options.forEach(o => o.classList.remove("active"));
+    options[i].classList.add("active");
+    current = i;
+  }
+
+  // click only (simpler)
+  options.forEach((option, i) => {
+    option.addEventListener("click", () => setActive(i));
+  });
+
+  // auto slide
+  setInterval(() => {
+    current = (current + 1) % options.length;
+    setActive(current);
+  }, 3000);
+}
+
+loadAnimalSlider(animallog);
 
 
 
