@@ -99,17 +99,19 @@ nav a:hover {
 
 /* Title bigger + cleaner */
 .text-content h2 {
-  font-size: 26px;
-  margin: 0 0 10px 0;
+  font-size: 22px;          /* slightly smaller than before */
   font-weight: 700;
-  letter-spacing: -0.5px;
+  line-height: 1.2;
+  margin-bottom: 6px;
+  letter-spacing: -0.3px;
 }
 
 /* Paragraph text bigger + tighter */
 .text-main p {
-  margin: 6px 0;
-  font-size: 16px;
-  line-height: 1.4;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 4px 0;
+  color: #333; /* softer than pure black */
 }
 
 /* Bottom section (logo + link) */
@@ -368,4 +370,17 @@ button {
   width: 240px ;
   height: 175px ;
   object-fit: contain;
+}
+
+
+/* Organization link styling */
+.org a {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2F8E8E;
+  text-decoration: none;
+}
+
+.org a:hover {
+  text-decoration: underline;
 }
