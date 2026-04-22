@@ -31,7 +31,7 @@
       organization: "Heal the Bay",
       location: "Santa Monica, CA",
       environment: "Ocean",
-      description: "Join a beach cleanup to remove harmful waste.",
+      description: "Heal the Bay is an environmental nonprofit established in 1985 that is dedicated to making the coastal waters and watersheds in Greater Los Angeles safe, healthy, and clean. We use science, education, community action, and advocacy to fulfill our mission.",
       hours: "10-2",
       estimate: 25,
       imageURL: "images-vol/healbayy.webp",
@@ -43,11 +43,11 @@
       organization: "Bolsa Chica Conservancy",
       location: "Huntington Beach, CA",
       environment: "Wetlands",
-      description: "Help restore coastal habitats and protect wildlife.",
+      description: "The Bolsa Chica Conservancy inspires communities to protect and restore wetlands through education, hands-on programs, and advancing coastal ecology and environmental sustainability.",
       hours: "9-1",
       estimate: 40,
-      imageURL: "assets/images/bolsa_chica.jpg",
-      orgImage: "assets/images/bolsa_logo.png",
+      imageURL: "images-vol/IMG_5670-scaled.webp",
+      orgImage: "images-vol/logo.svg",
       link: "https://bolsachica.org"
     },
     {
@@ -55,11 +55,11 @@
       organization: "California Wildlife Center",
       location: "Malibu, CA",
       environment: "Wildlife",
-      description: "Assist in caring for injured animals.",
+      description: "California Wildlife Center protects native wildlife through rescue, rehabilitation, and education. Their team cares for sick, injured, and orphaned animals, helping them recover and return to the wild while addressing the impacts of habitat loss and human activity.",
       hours: "8-12",
       estimate: 30,
-      imageURL: "assets/images/malibu_wildlife.jpg",
-      orgImage: "assets/images/cwc_logo.png",
+      imageURL: "images-vol/611605628_18548702098041909_8002350352031748248_n.jpg",
+      orgImage: "images-vol/CWClogo.png",
       link: "https://cawildlife.org"
     },
     {
@@ -67,11 +67,11 @@
       organization: "TreePeople",
       location: "Los Angeles, CA",
       environment: "Urban",
-      description: "Plant trees to improve air quality.",
+      description: "TreePeople brings communities together to build a more climate-resilient Southern California through tree planting, ecosystem restoration, and environmental education. Their work addresses wildfire recovery, extreme heat, and urban greening while empowering communities with sustainable solutions.",
       hours: "10-1",
       estimate: 20,
-      imageURL: "assets/images/la_tree_planting.jpg",
-      orgImage: "assets/images/treepeople_logo.png",
+      imageURL: "images-vol/community.jpg",
+      orgImage: "images-vol/Treeplaneted.png",
       link: "https://treepeople.org"
     }
   ];
