@@ -375,30 +375,24 @@ displayJobs(experience);
 
 //I will pass the array data
 function displayAnimals(data) {
+  const boxes = document.querySelectorAll(".expbox");
 
-// This line of code will point to the containers I want to fill
-const boxes = document.querySelectorAll(".expbox");
+  for (let i = 0; i < data.length; i++) {
+    let exp = data[i];
 
-for( let i = 0; i < data.length; i++) {
+    if (boxes[i]) {
+      boxes[i].innerHTML = `
+        <img src="${exp.imageURL}" alt="${exp.title}" loading="lazy">
 
-  // This will represent a individual card in the array, so I can access the properties of each card
-  let exp = data[i];
+        <h2>${exp.title}</h2>
 
-if(boxes[i]) {
+        <p class="description">${exp.description || ""}</p>
 
-  boxes[i].innerHTML = `
-  <img src="${exp.imageURL}" alt="${exp.title}" loading="lazy">
-  <h2>${exp.title}</h2>
-  <p><strong>Scientific Name:</strong> ${exp.scientificName}</p>
-  <p><strong>Habitat:</strong> ${exp.habitat}</p>
-  <p><strong>Diet:</strong> ${exp.diet}</p>
-  <p><strong>Conservation Status:</strong> ${exp.status}</p>
-  <p><strong>Conservation Location:</strong> ${exp.conservationLocation}</p>
-  `;
+        <p class="status">${exp.status}</p>
+      `;
+    }
+  }
 }
-}
-}
-
 
 
 
