@@ -160,9 +160,9 @@ displayJobs(experience);
       diet: "carnivore",
       status: "Vulnerable",
       conservationLocation: "San Diego Zoo Safari Park",
-      description: "Social big cats facing habitat loss and human conflict."
+      description: "Social big cats facing habitat loss and human conflict.",
+      funFact: "Basically the king of naps — sleeps up to 20 hours a day."
     },
-  
     {
       title: "tiger",
       scientificName: "Panthera tigris",
@@ -171,9 +171,9 @@ displayJobs(experience);
       diet: "carnivore",
       status: "Endangered",
       conservationLocation: "Smithsonian National Zoo",
-      description: "Solitary predators threatened by poaching and deforestation."
+      description: "Solitary predators threatened by poaching and deforestation.",
+      funFact: "Prefers to be alone… unless it’s dinner time."
     },
-  
     {
       title: "african elephant",
       scientificName: "Loxodonta africana",
@@ -182,9 +182,9 @@ displayJobs(experience);
       diet: "herbivore",
       status: "Endangered",
       conservationLocation: "San Diego Zoo Safari Park",
-      description: "Keystone species impacted by ivory poaching and habitat loss."
+      description: "Keystone species impacted by ivory poaching and habitat loss.",
+      funFact: "Remembers everything… including who took its snacks."
     },
-  
     {
       title: "giraffe",
       scientificName: "Giraffa camelopardalis",
@@ -193,9 +193,9 @@ displayJobs(experience);
       diet: "herbivore",
       status: "Vulnerable",
       conservationLocation: "Los Angeles Zoo",
-      description: "Tall herbivores declining due to habitat fragmentation."
+      description: "Tall herbivores declining due to habitat fragmentation.",
+      funFact: "Built like a skyscraper with a snack obsession."
     },
-  
     {
       title: "plains zebra",
       scientificName: "Equus quagga",
@@ -204,9 +204,9 @@ displayJobs(experience);
       diet: "herbivore",
       status: "Near Threatened",
       conservationLocation: "San Diego Zoo",
-      description: "Striped grazers affected by land competition and drought."
+      description: "Striped grazers affected by land competition and drought.",
+      funFact: "No two stripes are the same — nature’s barcode system."
     },
-  
     {
       title: "red panda",
       scientificName: "Ailurus fulgens",
@@ -215,9 +215,9 @@ displayJobs(experience);
       diet: "omnivore",
       status: "Endangered",
       conservationLocation: "Los Angeles Zoo",
-      description: "Tree-dwelling mammals threatened by habitat loss."
+      description: "Tree-dwelling mammals threatened by habitat loss.",
+      funFact: "Looks like a raccoon, climbs like a cat, acts like neither."
     },
-  
     {
       title: "giant panda",
       scientificName: "Ailuropoda melanoleuca",
@@ -226,9 +226,9 @@ displayJobs(experience);
       diet: "herbivore",
       status: "Vulnerable",
       conservationLocation: "Smithsonian National Zoo",
-      description: "Bamboo specialists recovering through conservation efforts."
+      description: "Bamboo specialists recovering through conservation efforts.",
+      funFact: "Eats bamboo all day like it’s a full-time job."
     },
-  
     {
       title: "snow leopard",
       scientificName: "Panthera uncia",
@@ -237,9 +237,9 @@ displayJobs(experience);
       diet: "carnivore",
       status: "Vulnerable",
       conservationLocation: "Bronx Zoo",
-      description: "Elusive mountain predators threatened by climate change."
+      description: "Elusive mountain predators threatened by climate change.",
+      funFact: "So stealthy, you probably won’t see it even if it sees you."
     },
-  
     {
       title: "blue whale",
       scientificName: "Balaenoptera musculus",
@@ -248,9 +248,9 @@ displayJobs(experience);
       diet: "carnivore",
       status: "Endangered",
       conservationLocation: "Monterey Bay Aquarium",
-      description: "The largest animal on Earth, recovering from past whaling."
+      description: "The largest animal on Earth, recovering from past whaling.",
+      funFact: "Heart is the size of a car — casually."
     },
-  
     {
       title: "hawksbill sea turtle",
       scientificName: "Eretmochelys imbricata",
@@ -259,9 +259,9 @@ displayJobs(experience);
       diet: "omnivore",
       status: "Critically Endangered",
       conservationLocation: "Monterey Bay Aquarium",
-      description: "Coral reef turtles threatened by illegal shell trade."
+      description: "Coral reef turtles threatened by illegal shell trade.",
+      funFact: "Ancient traveler navigating oceans for decades."
     },
-  
     {
       title: "amur leopard",
       scientificName: "Panthera pardus orientalis",
@@ -270,9 +270,9 @@ displayJobs(experience);
       diet: "carnivore",
       status: "Critically Endangered",
       conservationLocation: "San Diego Zoo",
-      description: "One of the rarest big cats, with fewer than 100 left."
+      description: "One of the rarest big cats, with fewer than 100 left.",
+      funFact: "Rarer than most luxury cars — but way cooler."
     },
-  
     {
       title: "vaquita",
       scientificName: "Phocoena sinus",
@@ -281,9 +281,9 @@ displayJobs(experience);
       diet: "carnivore",
       status: "Critically Endangered",
       conservationLocation: "Gulf of California",
-      description: "The world’s rarest marine mammal, near extinction."
+      description: "The world’s rarest marine mammal, near extinction.",
+      funFact: "The shyest creature you’ll probably never see."
     },
-  
     {
       title: "black rhinoceros",
       scientificName: "Diceros bicornis",
@@ -292,9 +292,9 @@ displayJobs(experience);
       diet: "herbivore",
       status: "Critically Endangered",
       conservationLocation: "San Diego Zoo Safari Park",
-      description: "Rhinos heavily targeted for their horns."
+      description: "Rhinos heavily targeted for their horns.",
+      funFact: "Looks tough… because it is."
     },
-  
     {
       title: "golden lion tamarin",
       scientificName: "Leontopithecus rosalia",
@@ -303,9 +303,9 @@ displayJobs(experience);
       diet: "omnivore",
       status: "Endangered",
       conservationLocation: "National Zoo",
-      description: "Small primates recovering through reforestation programs."
+      description: "Small primates recovering through reforestation programs.",
+      funFact: "Hair game stronger than most humans."
     },
-  
     {
       title: "california condor",
       scientificName: "Gymnogyps californianus",
@@ -314,9 +314,9 @@ displayJobs(experience);
       diet: "carnivore",
       status: "Critically Endangered",
       conservationLocation: "Los Angeles Zoo",
-      description: "North America’s largest bird, saved from near extinction."
+      description: "North America’s largest bird, saved from near extinction.",
+      funFact: "Massive wingspan — basically a flying glider."
     },
-  
     {
       title: "dodo",
       scientificName: "Raphus cucullatus",
@@ -325,9 +325,9 @@ displayJobs(experience);
       diet: "herbivore",
       status: "Extinct",
       conservationLocation: "None",
-      description: "A symbol of extinction caused by human impact."
+      description: "A symbol of extinction caused by human impact.",
+      funFact: "Didn’t survive humans… but became unforgettable."
     },
-  
     {
       title: "cheetah",
       scientificName: "Acinonyx jubatus",
@@ -336,9 +336,9 @@ displayJobs(experience);
       diet: "carnivore",
       status: "Vulnerable",
       conservationLocation: "San Diego Zoo Safari Park",
-      description: "The fastest land animal facing habitat loss."
+      description: "The fastest land animal facing habitat loss.",
+      funFact: "Fastest land animal — zero chill when running."
     },
-  
     {
       title: "gray wolf",
       scientificName: "Canis lupus",
@@ -347,9 +347,9 @@ displayJobs(experience);
       diet: "carnivore",
       status: "Least Concern",
       conservationLocation: "Minnesota Zoo",
-      description: "Key predators essential for balanced ecosystems."
+      description: "Key predators essential for balanced ecosystems.",
+      funFact: "Pack mentality: teamwork makes the dream work."
     },
-  
     {
       title: "orangutan",
       scientificName: "Pongo pygmaeus",
@@ -358,9 +358,9 @@ displayJobs(experience);
       diet: "omnivore",
       status: "Critically Endangered",
       conservationLocation: "Los Angeles Zoo",
-      description: "Highly intelligent primates losing rainforest habitat."
+      description: "Highly intelligent primates losing rainforest habitat.",
+      funFact: "Basically a forest engineer with hands."
     },
-  
     {
       title: "mountain gorilla",
       scientificName: "Gorilla beringei beringei",
@@ -369,7 +369,8 @@ displayJobs(experience);
       diet: "herbivore",
       status: "Endangered",
       conservationLocation: "Virunga Region",
-      description: "Great apes protected through intensive conservation efforts."
+      description: "Great apes protected through intensive conservation efforts.",
+      funFact: "Strong, calm, and surprisingly gentle."
     }
   ]; //end of the array
 
@@ -388,7 +389,10 @@ function displayAnimals(data) {
 
         <p class="description">${exp.description || ""}</p>
 
+        <p class="fun-fact">${exp.funFact}</p>
+
         <p class="status">${exp.status}</p>
+
       `;
     }
   }
