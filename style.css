@@ -205,6 +205,14 @@ nav a:hover {
 }
 
 
+.subheading {
+  font-size: 16px;
+  color: #555;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  text-size-adjust: 100;
+}
+
 
 
 #card-container {
