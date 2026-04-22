@@ -312,49 +312,57 @@ nav a:hover {
 }
 
 
+
 .hero-slider {
   flex: 1;
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
 }
 
+/* container */
 .options {
   display: flex;
-  gap: 10px;
   width: 100%;
-  max-width: 700px;
-  height: 320px;
+  max-width: 1000px;
+  height: 400px;
+  gap: 16px;
 }
 
+/* each panel */
 .option {
-  flex: 1;
+  flex: 0.8;
   background-image: var(--optionImage);
   background-size: cover;
-  background-position: center;
-  border-radius: 24px;
+  background-position: top center;
+  border-radius: 28px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  transition: flex 0.6s ease, filter 0.4s ease;
+  transition: flex 0.6s ease, filter 0.4s ease, transform 0.4s ease;
 }
 
+/* expanded panel (THIS is the magic) */
 .option.active {
-  flex: 4;
+  flex: 7;
+  transform: scale(1.02);
 }
 
+/* dim inactive */
 .option:not(.active) {
   filter: brightness(0.6);
 }
 
+/* dark gradient for readability */
 .option::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0.12));
+  background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0.1));
   z-index: 1;
 }
 
+/* text container */
 .label {
   position: absolute;
   bottom: 20px;
@@ -370,13 +378,9 @@ nav a:hover {
   opacity: 1;
 }
 
-.info {
-  display: flex;
-  flex-direction: column;
-}
-
+/* text styles */
 .info .main {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 4px;
 }
@@ -384,7 +388,6 @@ nav a:hover {
 .info .sub {
   font-size: 0.9rem;
   line-height: 1.4;
-  opacity: 0.95;
 }
 
 

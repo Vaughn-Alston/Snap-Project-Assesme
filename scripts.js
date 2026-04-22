@@ -407,7 +407,7 @@ displayAnimals(animallog);
 
 function loadAnimalSlider(data) {
   const slider = document.getElementById("animal-slider");
-  const animals = data.slice(0, 4);
+  const animals = data.slice(9, 12);
 
   slider.innerHTML = "";
 
@@ -452,6 +452,26 @@ function loadAnimalSlider(data) {
 }
 
 loadAnimalSlider(animallog);
+
+
+
+const searchBar = document.getElementById("search-bar");
+
+searchBar.addEventListener("input", function () {
+  
+  let value = this.value.toLowerCase();
+
+  let filtred = animallog.filter(animal => animal.title.toLowerCase().includes(value));
+
+  displayAnimals(filtred);
+
+
+}); 
+
+
+
+
+
 
 
 
