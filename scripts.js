@@ -152,206 +152,226 @@ displayJobs(experience);
   //Here I will create an array of objects of the cards, 
 
   let animallog = [
-  {
-    title: "lion",
-    scientificName: "Panthera leo",
-    imageURL: "assets/images/lion-1_0.webp",
-    habitat: "savannah",
-    diet: "carnivore",
-    status: "Vulnerable",
-    conservationLocation: "San Diego Zoo Safari Park"
-  },
-
-  {
-    title: "tiger",
-    scientificName: "Panthera tigris",
-    imageURL: "assets/images/tigerww.webp",
-    habitat: "forest",
-    diet: "carnivore",
-    status: "Endangered",
-    conservationLocation: "Smithsonian National Zoo"
-  },
-
-  {
-    title: "african elephant",
-    scientificName: "Loxodonta africana",
-    imageURL: "assets/images/African-elephant-Kenya.webp",
-    habitat: "savannah",
-    diet: "herbivore",
-    status: "Endangered",
-    conservationLocation: "San Diego Zoo Safari Park"
-  },
-
-  {
-    title: "giraffe",
-    scientificName: "Giraffa camelopardalis",
-    imageURL: "assets/images/Girraf.webp",
-    habitat: "savannah",
-    diet: "herbivore",
-    status: "Vulnerable",
-    conservationLocation: "Los Angeles Zoo"
-  },
-
-  {
-    title: "plains zebra",
-    scientificName: "Equus quagga",
-    imageURL: "assets/images/zebra.webp",
-    habitat: "savannah",
-    diet: "herbivore",
-    status: "Near Threatened",
-    conservationLocation: "San Diego Zoo"
-  },
-
-  {
-    title: "red panda",
-    scientificName: "Ailurus fulgens",
-    imageURL: "assets/images/red_panda.webp",
-    habitat: "forest",
-    diet: "omnivore",
-    status: "Endangered",
-    conservationLocation: "Los Angeles Zoo"
-  },
-
-  {
-    title: "giant panda",
-    scientificName: "Ailuropoda melanoleuca",
-    imageURL: "assets/images/panda.webp",
-    habitat: "forest",
-    diet: "herbivore",
-    status: "Vulnerable",
-    conservationLocation: "Smithsonian National Zoo"
-  },
-
-  {
-    title: "snow leopard",
-    scientificName: "Panthera uncia",
-    imageURL: "assets/images/snow_leopard.webp",
-    habitat: "mountains",
-    diet: "carnivore",
-    status: "Vulnerable",
-    conservationLocation: "Bronx Zoo"
-  },
-
-  {
-    title: "blue whale",
-    scientificName: "Balaenoptera musculus",
-    imageURL: "assets/images/blue.webp",
-    habitat: "ocean",
-    diet: "carnivore",
-    status: "Endangered",
-    conservationLocation: "Monterey Bay Aquarium"
-  },
-
-  {
-    title: "hawksbill sea turtle",
-    scientificName: "Eretmochelys imbricata",
-    imageURL: "assets/images/hawksbill_sea_turtle.webp",
-    habitat: "ocean",
-    diet: "omnivore",
-    status: "Critically Endangered",
-    conservationLocation: "Monterey Bay Aquarium"
-  },
-
-  {
-    title: "amur leopard",
-    scientificName: "Panthera pardus orientalis",
-    imageURL: "assets/images/amur_leopard.webp",
-    habitat: "forest",
-    diet: "carnivore",
-    status: "Critically Endangered",
-    conservationLocation: "San Diego Zoo"
-  },
-
-  {
-    title: "vaquita",
-    scientificName: "Phocoena sinus",
-    imageURL: "assets/images/vaquita-swimming.webp",
-    habitat: "ocean",
-    diet: "carnivore",
-    status: "Critically Endangered",
-    conservationLocation: "Conservation Program - Gulf of California"
-  },
-
-  {
-    title: "black rhinoceros",
-    scientificName: "Diceros bicornis",
-    imageURL: "assets/images/Rhino_Black.webp",
-    habitat: "savannah",
-    diet: "herbivore",
-    status: "Critically Endangered",
-    conservationLocation: "San Diego Zoo Safari Park"
-  },
-
-  {
-    title: "golden lion tamarin",
-    scientificName: "Leontopithecus rosalia",
-    imageURL: "assets/images/golden_lion_tamarin.webp",
-    habitat: "forest",
-    diet: "omnivore",
-    status: "Endangered",
-    conservationLocation: "National Zoo"
-  },
-
-  {
-    title: "california condor",
-    scientificName: "Gymnogyps californianus",
-    imageURL: "assets/images/npsphoto-gavinemmons-caco-692-726-high-peaks.webp",
-    habitat: "mountains",
-    diet: "carnivore",
-    status: "Critically Endangered",
-    conservationLocation: "Los Angeles Zoo"
-  },
-
-  {
-    title: "dodo",
-    scientificName: "Raphus cucullatus",
-    imageURL: "assets/images/dodo2ew.webp",
-    habitat: "island",
-    diet: "herbivore",
-    status: "Extinct",
-    conservationLocation: "None"
-  },
-
-  {
-    title: "cheetah",
-    scientificName: "Acinonyx jubatus",
-    imageURL: "assets/images/East-African-Cheetah.webp",
-    habitat: "savannah",
-    diet: "carnivore",
-    status: "Vulnerable",
-    conservationLocation: "San Diego Zoo Safari Park"
-  },
-
-  {
-    title: "gray wolf",
-    scientificName: "Canis lupus",
-    imageURL: "assets/images/Eurasian_wolf_2.webp",
-    habitat: "forest",
-    diet: "carnivore",
-    status: "Least Concern",
-    conservationLocation: "Minnesota Zoo"
-  },
-
-  {
-    title: "orangutan",
-    scientificName: "Pongo pygmaeus",
-    imageURL: "assets/images/orange_monkey.webp",
-    habitat: "forest",
-    diet: "omnivore",
-    status: "Critically Endangered",
-    conservationLocation: "Los Angeles Zoo"
-  },
-
-  {
-    title: "mountain gorilla",
-    scientificName: "Gorilla beringei beringei",
-    imageURL: "assets/images/mountain_gorilla.webp",
-    habitat: "mountains",
-    diet: "herbivore",
-    status: "Endangered",
-    conservationLocation: "Virunga Conservation Region"
-  }
-]; //end of the array
+    {
+      title: "lion",
+      scientificName: "Panthera leo",
+      imageURL: "assets/images/lion-1_0.webp",
+      habitat: "savannah",
+      diet: "carnivore",
+      status: "Vulnerable",
+      conservationLocation: "San Diego Zoo Safari Park",
+      description: "Social big cats facing habitat loss and human conflict."
+    },
+  
+    {
+      title: "tiger",
+      scientificName: "Panthera tigris",
+      imageURL: "assets/images/tigerww.webp",
+      habitat: "forest",
+      diet: "carnivore",
+      status: "Endangered",
+      conservationLocation: "Smithsonian National Zoo",
+      description: "Solitary predators threatened by poaching and deforestation."
+    },
+  
+    {
+      title: "african elephant",
+      scientificName: "Loxodonta africana",
+      imageURL: "assets/images/African-elephant-Kenya.webp",
+      habitat: "savannah",
+      diet: "herbivore",
+      status: "Endangered",
+      conservationLocation: "San Diego Zoo Safari Park",
+      description: "Keystone species impacted by ivory poaching and habitat loss."
+    },
+  
+    {
+      title: "giraffe",
+      scientificName: "Giraffa camelopardalis",
+      imageURL: "assets/images/Girraf.webp",
+      habitat: "savannah",
+      diet: "herbivore",
+      status: "Vulnerable",
+      conservationLocation: "Los Angeles Zoo",
+      description: "Tall herbivores declining due to habitat fragmentation."
+    },
+  
+    {
+      title: "plains zebra",
+      scientificName: "Equus quagga",
+      imageURL: "assets/images/zebra.webp",
+      habitat: "savannah",
+      diet: "herbivore",
+      status: "Near Threatened",
+      conservationLocation: "San Diego Zoo",
+      description: "Striped grazers affected by land competition and drought."
+    },
+  
+    {
+      title: "red panda",
+      scientificName: "Ailurus fulgens",
+      imageURL: "assets/images/red_panda.webp",
+      habitat: "forest",
+      diet: "omnivore",
+      status: "Endangered",
+      conservationLocation: "Los Angeles Zoo",
+      description: "Tree-dwelling mammals threatened by habitat loss."
+    },
+  
+    {
+      title: "giant panda",
+      scientificName: "Ailuropoda melanoleuca",
+      imageURL: "assets/images/panda.webp",
+      habitat: "forest",
+      diet: "herbivore",
+      status: "Vulnerable",
+      conservationLocation: "Smithsonian National Zoo",
+      description: "Bamboo specialists recovering through conservation efforts."
+    },
+  
+    {
+      title: "snow leopard",
+      scientificName: "Panthera uncia",
+      imageURL: "assets/images/snow_leopard.webp",
+      habitat: "mountains",
+      diet: "carnivore",
+      status: "Vulnerable",
+      conservationLocation: "Bronx Zoo",
+      description: "Elusive mountain predators threatened by climate change."
+    },
+  
+    {
+      title: "blue whale",
+      scientificName: "Balaenoptera musculus",
+      imageURL: "assets/images/blue.webp",
+      habitat: "ocean",
+      diet: "carnivore",
+      status: "Endangered",
+      conservationLocation: "Monterey Bay Aquarium",
+      description: "The largest animal on Earth, recovering from past whaling."
+    },
+  
+    {
+      title: "hawksbill sea turtle",
+      scientificName: "Eretmochelys imbricata",
+      imageURL: "assets/images/hawksbill_sea_turtle.webp",
+      habitat: "ocean",
+      diet: "omnivore",
+      status: "Critically Endangered",
+      conservationLocation: "Monterey Bay Aquarium",
+      description: "Coral reef turtles threatened by illegal shell trade."
+    },
+  
+    {
+      title: "amur leopard",
+      scientificName: "Panthera pardus orientalis",
+      imageURL: "assets/images/amur_leopard.webp",
+      habitat: "forest",
+      diet: "carnivore",
+      status: "Critically Endangered",
+      conservationLocation: "San Diego Zoo",
+      description: "One of the rarest big cats, with fewer than 100 left."
+    },
+  
+    {
+      title: "vaquita",
+      scientificName: "Phocoena sinus",
+      imageURL: "assets/images/vaquita-swimming.webp",
+      habitat: "ocean",
+      diet: "carnivore",
+      status: "Critically Endangered",
+      conservationLocation: "Gulf of California",
+      description: "The world’s rarest marine mammal, near extinction."
+    },
+  
+    {
+      title: "black rhinoceros",
+      scientificName: "Diceros bicornis",
+      imageURL: "assets/images/Rhino_Black.webp",
+      habitat: "savannah",
+      diet: "herbivore",
+      status: "Critically Endangered",
+      conservationLocation: "San Diego Zoo Safari Park",
+      description: "Rhinos heavily targeted for their horns."
+    },
+  
+    {
+      title: "golden lion tamarin",
+      scientificName: "Leontopithecus rosalia",
+      imageURL: "assets/images/golden_lion_tamarin.webp",
+      habitat: "forest",
+      diet: "omnivore",
+      status: "Endangered",
+      conservationLocation: "National Zoo",
+      description: "Small primates recovering through reforestation programs."
+    },
+  
+    {
+      title: "california condor",
+      scientificName: "Gymnogyps californianus",
+      imageURL: "assets/images/npsphoto-gavinemmons-caco-692-726-high-peaks.webp",
+      habitat: "mountains",
+      diet: "carnivore",
+      status: "Critically Endangered",
+      conservationLocation: "Los Angeles Zoo",
+      description: "North America’s largest bird, saved from near extinction."
+    },
+  
+    {
+      title: "dodo",
+      scientificName: "Raphus cucullatus",
+      imageURL: "assets/images/dodo2ew.webp",
+      habitat: "island",
+      diet: "herbivore",
+      status: "Extinct",
+      conservationLocation: "None",
+      description: "A symbol of extinction caused by human impact."
+    },
+  
+    {
+      title: "cheetah",
+      scientificName: "Acinonyx jubatus",
+      imageURL: "assets/images/East-African-Cheetah.webp",
+      habitat: "savannah",
+      diet: "carnivore",
+      status: "Vulnerable",
+      conservationLocation: "San Diego Zoo Safari Park",
+      description: "The fastest land animal facing habitat loss."
+    },
+  
+    {
+      title: "gray wolf",
+      scientificName: "Canis lupus",
+      imageURL: "assets/images/Eurasian_wolf_2.webp",
+      habitat: "forest",
+      diet: "carnivore",
+      status: "Least Concern",
+      conservationLocation: "Minnesota Zoo",
+      description: "Key predators essential for balanced ecosystems."
+    },
+  
+    {
+      title: "orangutan",
+      scientificName: "Pongo pygmaeus",
+      imageURL: "assets/images/orange_monkey.webp",
+      habitat: "forest",
+      diet: "omnivore",
+      status: "Critically Endangered",
+      conservationLocation: "Los Angeles Zoo",
+      description: "Highly intelligent primates losing rainforest habitat."
+    },
+  
+    {
+      title: "mountain gorilla",
+      scientificName: "Gorilla beringei beringei",
+      imageURL: "assets/images/mountain_gorilla.webp",
+      habitat: "mountains",
+      diet: "herbivore",
+      status: "Endangered",
+      conservationLocation: "Virunga Region",
+      description: "Great apes protected through intensive conservation efforts."
+    }
+  ]; //end of the array
 
 //I will pass the array data
 function displayAnimals(data) {
