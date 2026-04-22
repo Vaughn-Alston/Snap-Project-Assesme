@@ -58,7 +58,7 @@
       description: "California Wildlife Center protects native wildlife through rescue, rehabilitation, and education. Their team cares for sick, injured, and orphaned animals, helping them recover and return to the wild while addressing the impacts of habitat loss and human activity.",
       hours: "8-12",
       estimate: 30,
-      imageURL: "images-vol/611605628_18548702098041909_8002350352031748248_n.jpg",
+      imageURL: "images-vol/DSC06787CWC-1030x687.jpg",
       orgImage: "images-vol/CWClogo.png",
       link: "https://cawildlife.org"
     },
