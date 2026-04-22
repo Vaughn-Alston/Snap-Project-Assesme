@@ -459,14 +459,18 @@ loadAnimalSlider(animallog);
 
 
 
-function filterAnimals(status) {
 
+let currentStatus = "All";
+
+
+function filterAnimals(status) {
 
 //this is a special case which will default show all values
 if(status === "All") {
   displayAnimals(animallog);
   return;
 }
+
 
 //create a empty array to hold filtred values
 let results = [];
@@ -493,6 +497,25 @@ function removeCard()
 
 displayAnimals(animallog);
 }
+
+
+const searchBar = document.getElementById("search-bar");
+
+searchBar.addEventListener("input", function () {
+  let value = this.value.toLowerCase();
+
+  let results = [];
+
+  for (let i = 0; i < animallog.length; i++) {
+    let animal = animallog[i];
+
+    if (animal.title.toLowerCase().includes(value)) {
+      results.push(animal);
+    }
+  }
+
+  displayAnimals(results);
+});
 
 
 
