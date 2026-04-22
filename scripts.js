@@ -378,22 +378,26 @@ displayJobs(experience);
 function displayAnimals(data) {
   const boxes = document.querySelectorAll(".expbox");
 
+  // First clear and hide ALL boxes
+  for (let i = 0; i < boxes.length; i++) {
+    boxes[i].innerHTML = "";
+    boxes[i].style.display = "none";
+  }
+
+  // Then fill only the matching ones
   for (let i = 0; i < data.length; i++) {
     let exp = data[i];
 
     if (boxes[i]) {
       boxes[i].innerHTML = `
         <img src="${exp.imageURL}" alt="${exp.title}" loading="lazy">
-
         <h2>${exp.title}</h2>
-
         <p class="description">${exp.description || ""}</p>
-
-        <p class="fun-fact">${exp.funFact}</p>
-
+        <p class="fun-fact">${exp.funFact || ""}</p>
         <p class="status">${exp.status}</p>
-
       `;
+
+      boxes[i].style.display = "block";
     }
   }
 }
@@ -455,23 +459,40 @@ loadAnimalSlider(animallog);
 
 
 
-const searchBar = document.getElementById("search-bar");
-
-searchBar.addEventListener("input", function () {
-  
-  let value = this.value.toLowerCase();
-
-  let filtred = animallog.filter(animal => animal.title.toLowerCase().includes(value));
-
-  displayAnimals(filtred);
+function filterAnimals(status) {
 
 
-}); 
+//this is a special case which will default show all values
+if(status === "All") {
+  displayAnimals(animallog);
+  return;
+}
+
+//create a empty array to hold filtred values
+let results = [];
+
+for(let i = 0; i < animallog.length; i++) {
+
+  let animal = animallog[i];
 
 
+  if (animal.status === status) {
 
+    results.push(animal);
+  }
+}
 
+displayAnimals(results);
 
+}
+
+function removeCard()
+{
+
+  animallog.pop();
+
+displayAnimals(animallog);
+}
 
 
 
