@@ -94,26 +94,35 @@ function displayJobs(data) {
 
       // Fill each box with the experience data
       boxes[i].innerHTML = `
+  <div class="card-img">
+    <img src="${exp.imageURL}" alt="${exp.title}" loading="lazy">
+  </div>
+
   <div class="text-content">
-  <div class="text-main">
-    <h2>${exp.title}</h2>
-    <p><strong>Organization:</strong> ${exp.organization}</p>
-    <p><strong>Location:</strong> ${exp.location}</p>
-    <p><strong>Environment:</strong> ${exp.environment}</p>
-    <p><strong>Hours:</strong> ${exp.hours}</p>
-    <p><strong>Estimate:</strong> ${exp.estimate}</p>
-    <p><strong>Description:</strong> ${exp.description}</p>
+    <div class="text-main">
+      <h2>${exp.title}</h2>
+
+      <p class="org">
+        <a href="${exp.link}" target="_blank">${exp.organization}</a>
+      </p>
+
+      <p class="meta">
+        ${exp.location} • ${exp.environment}
+      </p>
+
+      <p><strong>Hours:</strong> ${exp.hours}</p>
+      <p><strong>Estimate:</strong> ${exp.estimate}</p>
+
+      <p class="description">
+        ${exp.description}
+      </p>
+    </div>
   </div>
 
-  <div class="text-bottom">
-    <img src="${exp.orgImage}" alt="${exp.organization} logo" class="org-logo">
-    <a href="${exp.link}" target="_blank">${exp.organization} </a>
+  <!-- LOGO ON RIGHT -->
+  <div class="logo-side">
+    <img src="${exp.orgImage}" alt="${exp.organization} logo">
   </div>
-</div>
-
-<div class="card-img">
-  <img src="${exp.imageURL}" alt="${exp.title}" loading="lazy">
-</div>
 `;
     }
   }
