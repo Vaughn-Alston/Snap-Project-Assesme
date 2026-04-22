@@ -63,6 +63,117 @@ nav a:hover {
 
 
 
+/* This setion of the code represents the volunteer opportunities */
+/* This stacks all boxes top to bottom */
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.joinus {
+  display: flex;
+  width: 100%;
+  min-height: 220px; /* reduced from 260 → less empty space */
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  gap: 20px; /* space between text and image */
+}
+
+/* LEFT SIDE TEXT */
+.text-content {
+  width: 60%;
+  padding: 24px; /* slightly tighter */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Title bigger + cleaner */
+.text-content h2 {
+  font-size: 26px;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Paragraph text bigger + tighter */
+.text-main p {
+  margin: 6px 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Bottom section (logo + link) */
+.text-bottom {
+  margin-top: 10px;
+}
+
+.text-bottom a {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+/* RIGHT SIDE IMAGE */
+.card-img {
+  width: 40%;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills fully, no white space */
+  display: block;
+}
+
+/* Organization logo */
+.org-logo {
+  width: 40px;   
+  height: 40px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+
+/* End of volounteer section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
